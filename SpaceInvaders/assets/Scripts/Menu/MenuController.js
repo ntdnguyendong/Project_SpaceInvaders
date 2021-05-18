@@ -2,11 +2,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        labelNameGame : cc.Node,
+       imgNameGame : cc.Node,
     },
 
     onLoad () {
-        this.labelName();
+        this.imgName();
     },
 
     start () {
@@ -15,10 +15,10 @@ cc.Class({
 
     // update (dt) {},
 
-    labelName(){
+    imgName(){
         let anim = cc.tween()
-            .to(2, {scale : 0.5})
-            .to(2, {scale : 1.2})
-        cc.tween(this.labelNameGame).then(anim).repeatForever().start()
+            .to(1, {scale : 0.7})
+            .to(1, {scale : 1})
+        cc.tween(this.imgNameGame).then(anim).repeatForever().start()
     },
 });
