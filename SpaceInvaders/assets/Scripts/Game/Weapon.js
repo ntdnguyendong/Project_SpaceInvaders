@@ -16,6 +16,8 @@ cc.Class({
 
   // update (dt) {},
 
-  createBullet() {},
+  createBullet() {
+    let bulletPos = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO)
+  },
   
 });
