@@ -1,3 +1,4 @@
+let _singleton = require('SingleTon')
 cc.Class({
   extends: cc.Component,
 
@@ -10,14 +11,23 @@ cc.Class({
     interval: 0.2,
   },
 
-  onLoad() {},
+  onLoad() { },
 
-  start() {},
+  start() { },
 
   // update (dt) {},
 
-  createBullet() {
-    let bulletPos = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO)
+  onEnable() {
+    this.schedule(this.fire, this.interval);
   },
-  
+
+  onDisable() {
+    this.unschedule(this.fire);
+  },
+
+  createBullet() {
+    let bulletPos = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
+    _singleton._instance.bulletPool.add(this.bullet, bulletPos);
+  },
+
 });
