@@ -1,5 +1,7 @@
 var SingleTon = cc.Class({
     statics : {_instance : null},
+
+    bulletPool : null,
     
     ctor(){
         this.bulletPool = null;

@@ -13,12 +13,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Bullet",
+    "_name": "EnemyNormal",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 1,
+    "_level": 4,
     "_components": [
       {
         "__id__": 2
@@ -40,8 +40,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
-      "height": 20
+      "width": 120,
+      "height": 76
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -88,10 +88,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "fe27270b-4efa-4ea7-aba2-3fbcc6697b6d"
+      "__uuid__": "8ee1d624-5aa9-4e18-90fd-53c1a829fb1b"
     },
     "_type": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -107,18 +107,13 @@
     "_id": ""
   },
   {
-    "__type__": "9ab0cqcKFdG3pAofLcdzbH8",
+    "__type__": "5acd97Si15Mg5EUZGKzmXLE",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "speed": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 500
-    },
     "_id": ""
   },
   {
@@ -127,9 +122,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "33b41b88-f3dd-4e6b-82e8-5615d7157eac"
+      "__id__": 0
     },
-    "fileId": "15uTf2+ExCxqyAqsNwEmDy",
+    "fileId": "a0nQ6WNi9BSolt8a2O2yqR",
     "sync": false
   }
 ]

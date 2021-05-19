@@ -3,7 +3,6 @@ cc.Class({
   extends: cc.Component,
 
   properties: {
-    _posMouse: cc.v2,
     bullet: {
       default: null,
       type: cc.Prefab,
@@ -25,7 +24,7 @@ cc.Class({
     this.unschedule(this.fire);
   },
 
-  createBullet() {
+  fire() {
     let bulletPos = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
     _singleton._instance.bulletPool.add(this.bullet, bulletPos);
   },

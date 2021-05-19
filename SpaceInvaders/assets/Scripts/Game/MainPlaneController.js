@@ -2,7 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        mainCanvas: cc.Node,
         bulletMain: {
             default : null,
             type : cc.Node,
@@ -24,10 +23,11 @@ cc.Class({
     },
 
     planeMovement() {
+        let screenSize = cc.Canvas.instance.node.getContentSize();
         if (this._posMouse != null) {
             this.node.position = cc.v2(
-                this._posMouse.x - this.mainCanvas.width / 2,
-                this._posMouse.y - this.mainCanvas.height / 2
+                this._posMouse.x - screenSize.width / 2,
+                this._posMouse.y - screenSize.height / 2
             );
         }
     },
