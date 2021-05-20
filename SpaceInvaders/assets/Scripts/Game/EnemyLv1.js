@@ -13,24 +13,30 @@ cc.Class({
   // onLoad () {},
 
   onEnable() {
-    this.schedule(this.spawnEnemy, this.interval);
+    this.schedule(this.spawnEnemyNormal, this.interval);
   },
 
   onDisable() {
-    this.unschedule(this.spawnEnemy);
+    this.unschedule(this.spawnEnemyNormal);
   },
 
   start() {},
 
   // update (dt) {},
 
-  spawnEnemy() {
+  spawnEnemyNormal() {
+    let screen = cc.Canvas.instance.node.getContentSize();
     let enemy = cc.instantiate(this.enemy[0]);
+    let enemy_1 = cc.instantiate(this.enemy[1])
     enemy.active = true;
     enemy.parent = this.node;
-    let screen = cc.Canvas.instance.node.getContentSize();
+    enemy.position = cc.v2(this.node.position.x, screen.height)
+    enemy_1.active = true;
+    enemy_1.parent = this.node;
+    enemy_1.position = cc.v2(this.node.position.x, screen.height)
 
     const RADIUS = 50;
     enemy.x = cc.misc.lerp(-screen.width / 2 + RADIUS, screen.width / 2 - RADIUS, Math.random());
+    enemy_1.x = cc.misc.lerp(-screen.width / 2 + RADIUS, screen.width / 2 - RADIUS, Math.random());
   },
 });

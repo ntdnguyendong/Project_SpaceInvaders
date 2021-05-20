@@ -1,6 +1,6 @@
 cc.Class({
-    extends: cc.Component,
-
+    extends: require('ActorController'),
+    
     properties: {
         bulletMain: {
             default : null,
@@ -31,4 +31,13 @@ cc.Class({
             );
         }
     },
+
+    onCollisionEnter(other, self) {
+        if (other.node.group === 'Enemies') {
+            if(--this.hp < 1){
+                cc.audioEngine.playEffect(this.soundEneDie, false);
+                this.node.destroy();
+            }
+        }
+    }
 });
