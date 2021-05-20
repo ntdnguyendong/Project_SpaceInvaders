@@ -3,22 +3,16 @@ cc.Class({
 
     properties: {
         speed : {
-            default : cc.Vec2.ZERO
+            default : cc.Vec2.ZERO,
+            serializable : true,
         },
         soundEneDie : {
             default : null,
             type : cc.AudioClip,
         },
     },
-
-    ctor(){
-        this.maxHp = 3;
-        this.hp =3;
-    },
-
-    onLoad () {
-        this._super();
-    },
+    
+    onLoad () {},
 
     start () {
 
@@ -46,9 +40,7 @@ cc.Class({
 
     onCollisionEnter(other, self) {
         if (other.node.group === 'Main Bullet') {
-            cc.log(this.hp)
             if(--this.hp < 1){
-                cc.log(this.hp)
                 cc.audioEngine.playEffect(this.soundEneDie, false);
                 this.node.destroy();
             }

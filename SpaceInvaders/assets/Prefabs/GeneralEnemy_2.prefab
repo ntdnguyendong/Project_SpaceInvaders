@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "alien tileset_02",
+    "_name": "GeneralEnemy_2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -22,10 +22,16 @@
     "_components": [
       {
         "__id__": 2
+      },
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 3
+      "__id__": 5
     },
     "_opacity": 255,
     "_color": {
@@ -37,8 +43,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 54
+      "width": 100,
+      "height": 100
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -48,7 +54,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": 530.782,
       "z": 0
     },
     "_scale": {
@@ -66,7 +72,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "groupIndex": 0,
+    "groupIndex": 2,
     "_id": ""
   },
   {
@@ -85,10 +91,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "99385bd8-17fa-4441-8ec6-afb32376c728"
+      "__uuid__": "cfa104dd-fc55-438a-b83c-7e9539b4dafe"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -99,7 +105,42 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": {
-      "__uuid__": "0431f788-6604-48ca-9e79-fcb72e04d751"
+      "__uuid__": "8090805b-cade-4bef-8a18-932c90493fb7"
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.BoxCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 100,
+      "height": 100
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "f27990x4jVOPaz3N0DWqQxS",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "hp": 30,
+    "soundEneDie": {
+      "__uuid__": "73592ef1-4d97-43de-8cb2-ae49eec6c0d3"
     },
     "_id": ""
   },
@@ -109,9 +150,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "bfde3584-8929-455a-b944-aaefe317ce24"
     },
-    "fileId": "96zU8GMwtOUp2KVP1146X6",
+    "fileId": "5dNmSo6VxJ7IDAd0Nj+qie",
     "sync": false
   }
 ]

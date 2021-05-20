@@ -25,7 +25,6 @@ cc.Class({
     // update (dt) {},
     onCollisionEnter(other, self) {
         if (other.node.group === 'Enemies') {
-            cc.log("bullet")
             _singleton._instance.bulletPool.remove(this);     
         }
     }

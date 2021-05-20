@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>141-1414318_artfavor-alien-8-999px-hd-png-download-removebg-preview.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{563,643},{403,260}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{10,10},{403,260}}</string>
+				<key>sourceSize</key>
+				<string>{435,280}</string>
+			</dict>
+
+			<key>49-490799_enemy-spaceship-png-png-download-sprite-png-space-removebg-preview.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{563,904},{327,259}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{11,11},{327,259}}</string>
+				<key>sourceSize</key>
+				<string>{354,280}</string>
+			</dict>
+
+			<key>kisspng-space-shuttle-program-rocket-launch-spacecraft-5ae0761610ca36.4191625515246597340688.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,643},{562,1146}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{128,0},{562,1146}}</string>
+				<key>sourceSize</key>
+				<string>{838,1146}</string>
+			</dict>
+
+			<key>—Pngtree—green alien ufo clip art_6135163.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{995,642}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{127,253},{995,642}}</string>
+				<key>sourceSize</key>
+				<string>{1200,1200}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{1024,2048}</string>
+			<key>textureFileName</key>
+			<string>ship.png</string>
+			</dict>
+		</dict>
+</plist>

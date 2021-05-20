@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>frame-removebg-preview_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{68,748},{39,97}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{39,97}}</string>
+				<key>sourceSize</key>
+				<string>{39,97}</string>
+			</dict>
+
+			<key>frame-removebg-preview_09.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,856},{57,114}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{57,114}}</string>
+				<key>sourceSize</key>
+				<string>{57,114}</string>
+			</dict>
+
+			<key>frame-removebg-preview_10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,628},{67,137}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{67,137}}</string>
+				<key>sourceSize</key>
+				<string>{67,137}</string>
+			</dict>
+
+			<key>frame-removebg-preview_11.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{68,628},{55,119}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{55,119}}</string>
+				<key>sourceSize</key>
+				<string>{55,119}</string>
+			</dict>
+
+			<key>frame-removebg-preview_12.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{58,856},{55,77}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{55,77}}</string>
+				<key>sourceSize</key>
+				<string>{55,77}</string>
+			</dict>
+
+			<key>frame-removebg-preview_13.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,766},{64,89}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{64,89}}</string>
+				<key>sourceSize</key>
+				<string>{64,89}</string>
+			</dict>
+
+			<key>kisspng-watermark-explosion-wallpaper-explosion-5a711ce1a30ce5.0257792415173624016679.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{650,627}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{650,627}}</string>
+				<key>sourceSize</key>
+				<string>{650,627}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{1024,1024}</string>
+			<key>textureFileName</key>
+			<string>FrameFrame.png</string>
+			</dict>
+		</dict>
+</plist>

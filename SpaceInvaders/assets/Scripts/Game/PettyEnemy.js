@@ -7,7 +7,10 @@ cc.Class({
       type: cc.Prefab,
     },
     _count: 0,
-    interval: 1,
+    interval: {
+      default : 1.5,
+      serializable : true,
+    },
   },
 
   // onLoad () {},
