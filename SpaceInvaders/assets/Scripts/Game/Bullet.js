@@ -23,6 +23,7 @@ cc.Class({
     },
 
     // update (dt) {},
+    
     onCollisionEnter(other, self) {
         if (other.node.group === 'Enemies') {
             _singleton._instance.bulletPool.remove(this);     

@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GeneralEnemy_2",
+    "_name": "Bullet_Enemy",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -43,8 +43,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 100
+      "width": 40,
+      "height": 150
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -72,7 +72,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "groupIndex": 2,
+    "groupIndex": 3,
     "_id": ""
   },
   {
@@ -91,7 +91,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "cfa104dd-fc55-438a-b83c-7e9539b4dafe"
+      "__uuid__": "e1d5f93f-eb68-42f0-859b-1476a432a7ac"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -105,7 +105,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": {
-      "__uuid__": "8090805b-cade-4bef-8a18-932c90493fb7"
+      "__uuid__": "6e5f9a7d-168e-4a93-a821-797687fc9df4"
     },
     "_id": ""
   },
@@ -126,58 +126,82 @@
     "points": [
       {
         "__type__": "cc.Vec2",
-        "x": -49.3,
-        "y": -2.1
+        "x": -7.4,
+        "y": 12
       },
       {
         "__type__": "cc.Vec2",
-        "x": -12.1,
-        "y": -16.4
+        "x": 1,
+        "y": -75.1
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 7.7,
+        "y": 12.3
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 14.7,
+        "y": -1.4
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 19.3,
+        "y": 17.9
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 17.9,
+        "y": 52.1
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 9.1,
+        "y": 67.7
       },
       {
         "__type__": "cc.Vec2",
         "x": -0.1,
-        "y": -50
+        "y": 74
       },
       {
         "__type__": "cc.Vec2",
-        "x": 11.3,
-        "y": -17.9
+        "x": -11.1,
+        "y": 66.7
       },
       {
         "__type__": "cc.Vec2",
-        "x": 48.3,
-        "y": -2.2
+        "x": -16.8,
+        "y": 52.1
       },
       {
         "__type__": "cc.Vec2",
-        "x": 48.9,
-        "y": 5
+        "x": -20.2,
+        "y": 19.2
       },
       {
         "__type__": "cc.Vec2",
-        "x": -0.1,
-        "y": 50
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": -48.9,
-        "y": 6.1
+        "x": -13.9,
+        "y": -1.2
       }
     ],
     "_id": ""
   },
   {
-    "__type__": "f27990x4jVOPaz3N0DWqQxS",
+    "__type__": "bcbe79IDkdE7rFmjh+NTJ43",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "hp": 30,
-    "soundEneDie": {
-      "__uuid__": "73592ef1-4d97-43de-8cb2-ae49eec6c0d3"
+    "speed": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": -400
+    },
+    "soundBullet": {
+      "__uuid__": "9fce3ced-8e82-49ba-9034-d275960a1ef9"
     },
     "_id": ""
   },
@@ -187,9 +211,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "bfde3584-8929-455a-b944-aaefe317ce24"
+      "__uuid__": "7aa5da0d-2213-4c84-875c-b54972c875a6"
     },
-    "fileId": "5dNmSo6VxJ7IDAd0Nj+qie",
+    "fileId": "5fWHnsufpLYqI+7qMx5IVJ",
     "sync": false
   }
 ]

@@ -30,7 +30,7 @@ cc.Class({
             let bulletPos = bullet.node.position;
             bulletPos.addSelf(bullet.speed.mul(dt * 2));
 
-            let outScreen = bulletPos.x < leftScreen || bulletPos.x > rightScreen || bulletPos.y < bottomScreeen || bulletPos.y > topScreen;
+            let outScreen = bulletPos.x < leftScreen || bulletPos.x > rightScreen || bulletPos.y < bottomScreeen - 200 || bulletPos.y > topScreen + 200;
             if(outScreen){
                 this.remove(bullet);
                 continue;

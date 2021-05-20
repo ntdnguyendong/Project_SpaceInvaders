@@ -10,12 +10,6 @@ cc.Class({
     interval: 0.2,
   },
 
-  onLoad() { },
-
-  start() { },
-
-  // update (dt) {},
-
   onEnable() {
     this.schedule(this.fire, this.interval);
   },

@@ -16,6 +16,7 @@ cc.Class({
 
     update(dt) {
         this.planeMovement();
+        cc.log(this.hp);
     },
 
     getPositionMouse(event) {
@@ -33,7 +34,7 @@ cc.Class({
     },
 
     onCollisionEnter(other, self) {
-        if (other.node.group === 'Enemies') {
+        if (other.node.group === 'Enemies' || other.node.group === 'Enemy Bullet') {
             if(--this.hp < 1){
                 cc.audioEngine.playEffect(this.soundEneDie, false);
                 this.node.destroy();

@@ -53,8 +53,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 269.975,
-      "y": 282.68,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -110,7 +110,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.BoxCollider",
+    "__type__": "cc.CircleCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -123,11 +123,7 @@
       "x": 0,
       "y": 0
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 100,
-      "height": 100
-    },
+    "_radius": 51,
     "_id": ""
   },
   {
