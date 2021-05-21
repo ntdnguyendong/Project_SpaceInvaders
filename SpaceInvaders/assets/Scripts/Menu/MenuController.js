@@ -4,10 +4,12 @@ cc.Class({
     properties: {
        imgNameGame : cc.Node,
        playBtn : cc.Button,
+       imgDecor : cc.Node,
     },
 
     onLoad () {
         this.imgName();
+        this.imgDecorBg();
         this.playBtn.node.on('click', this.changeScene, this);
     },
 
@@ -18,10 +20,17 @@ cc.Class({
     // update (dt) {},
 
     imgName(){
-        let anim = cc.tween()
+        cc.tween(this.imgNameGame)
             .to(1, {scale : 0.5, opacity : 100})
             .to(2, {scale : 1.5, opacity : 255})
-        cc.tween(this.imgNameGame).then(anim).repeatForever().start()
+            .start();
+    },
+
+    imgDecorBg(){
+        let anim = cc.tween()
+            .to(1, {scale : 1.5, opacity : 100})
+            .to(2, {scale : 1.2, opacity : 255})
+        cc.tween(this.imgDecor).then(anim).repeatForever().start()
     },
 
     changeScene(){

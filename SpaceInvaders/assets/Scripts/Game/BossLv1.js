@@ -28,5 +28,15 @@ cc.Class({
         if ((posX - RADIUS) < left || ((posX + RADIUS)) > right) {
             this.speed.negSelf();
         }
+    },
+
+    onCollisionEnter(other, self) {
+        if (other.node.group === 'Main Bullet') {
+            if(--this.hp < 1){
+                Emitter.instance.emit("isBossDie");
+                cc.audioEngine.playEffect(this.soundEneDie, false);
+                this.node.destroy();
+            }
+        }
     }
 });

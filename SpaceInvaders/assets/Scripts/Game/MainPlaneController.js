@@ -1,3 +1,5 @@
+const Emitter = require("Emitter")
+
 cc.Class({
     extends: require('ActorController'),
     
@@ -39,6 +41,7 @@ cc.Class({
 
     dieMovement(){
         cc.Canvas.instance.node.off("mousemove", this.getPositionMouse, this);
+        Emitter.instance.emit("isDie");
         this.node.children[1].active = false;
         cc.audioEngine.playEffect(this.soundEneDie, false);
         this.node.getComponent(cc.Sprite).spriteFrame = this.spriteDie;

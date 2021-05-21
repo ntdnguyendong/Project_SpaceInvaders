@@ -5,7 +5,7 @@ cc.Class({
         bulletScale : {
             default : 0.01,
             serializable : true,
-        }
+        },
     },
 
 
@@ -16,6 +16,7 @@ cc.Class({
     },
 
     onEnable() {
+        cc.audioEngine.playEffect(this.soundBullet, false);
         let sprite = this.node.getComponent(cc.Sprite);
         sprite.node.angle += 180;
     },

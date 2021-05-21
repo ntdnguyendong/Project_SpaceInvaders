@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>frameicon.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{668,223}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{668,223}}</string>
+				<key>sourceSize</key>
+				<string>{668,223}</string>
+			</dict>
+
+			<key>frameresume.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,760},{222,117}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{28,22},{222,117}}</string>
+				<key>sourceSize</key>
+				<string>{284,160}</string>
+			</dict>
+
+			<key>lose.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,484},{567,275}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{4,75},{567,275}}</string>
+				<key>sourceSize</key>
+				<string>{577,432}</string>
+			</dict>
+
+			<key>losetext.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{953,289},{338,285}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{80,71},{338,285}}</string>
+				<key>sourceSize</key>
+				<string>{500,500}</string>
+			</dict>
+
+			<key>namegame.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,224},{577,259}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{1,1},{577,259}}</string>
+				<key>sourceSize</key>
+				<string>{580,262}</string>
+			</dict>
+
+			<key>photo_2021-05-20_13.45.20-removebg-preview.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{568,484},{384,397}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{58,51},{384,397}}</string>
+				<key>sourceSize</key>
+				<string>{500,500}</string>
+			</dict>
+
+			<key>win-removebg-preview (2).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{669,0},{381,288}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{27,27},{381,288}}</string>
+				<key>sourceSize</key>
+				<string>{425,360}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{2048,1024}</string>
+			<key>textureFileName</key>
+			<string>imgPanel.png</string>
+			</dict>
+		</dict>
+</plist>
