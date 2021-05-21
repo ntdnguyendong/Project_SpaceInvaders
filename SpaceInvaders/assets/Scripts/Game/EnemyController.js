@@ -10,6 +10,14 @@ cc.Class({
             default : null,
             type : cc.AudioClip,
         },
+        scaleBurst : {
+            default : 0.01,
+            serializable : true,
+        },
+        spriteDie : {
+            default : null,
+            type : cc.SpriteFrame,
+        }
     },
     
     onLoad () {},
@@ -38,11 +46,25 @@ cc.Class({
         }
     },
 
+    dieMovement(){
+        let polygonCon = this.node.getComponent(cc.PolygonCollider);
+        polygonCon.enabled = false;
+        cc.audioEngine.playEffect(this.soundEneDie, false);
+        this.node.getComponent(cc.Sprite).spriteFrame = this.spriteDie;
+        cc.tween(this.node)
+            .by(0.2,{scale : this.scaleBurst, opacity : 0, position : cc.Vec2.ZERO})
+            .by(0.7,{scale : this.scaleBurst, opacity : -100, position : cc.Vec2.ZERO})
+            .by(1,{scale : this.scaleBurst, opacity : -255, position : cc.Vec2.ZERO})
+            .call(()=>{
+                this.node.destroy();
+            })
+            .start()
+    },
+
     onCollisionEnter(other, self) {
         if (other.node.group === 'Main Bullet') {
             if(--this.hp < 1){
-                cc.audioEngine.playEffect(this.soundEneDie, false);
-                this.node.destroy();
+                this.dieMovement();
             }
         }
     }

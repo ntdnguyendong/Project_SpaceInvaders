@@ -73,5 +73,6 @@ cc.Class({
               this.dieMovement();
             }
         }
-    }
+    },
+
 });

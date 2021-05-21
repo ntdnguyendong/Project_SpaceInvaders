@@ -8,12 +8,12 @@ cc.Class({
         },
         interval: {
             default : null,
-            serializable : true,
+            serializable : false,
         }   
     },
 
     onEnable() {
-        let randomInterval = this.interval += this.getRandom(3, 7);
+        let randomInterval = this.interval += this.getRandom(5, 10);
         this.schedule(this.fire, randomInterval);
     },
 
