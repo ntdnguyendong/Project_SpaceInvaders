@@ -5,7 +5,11 @@ cc.Class({
         bulletMain: {
             default : null,
             type : cc.Node,
-        }
+        },
+        spriteDie : {
+            default : null,
+            type : cc.SpriteFrame,
+        },
     },
 
     onLoad() {
@@ -33,11 +37,26 @@ cc.Class({
         }
     },
 
+    dieMovement(){
+        cc.Canvas.instance.node.off("mousemove", this.getPositionMouse, this);
+        this.node.children[1].active = false;
+        cc.audioEngine.playEffect(this.soundEneDie, false);
+        this.node.getComponent(cc.Sprite).spriteFrame = this.spriteDie;
+        cc.tween(this.node)
+                .by(1,{scale : 1, opacity : 0})
+                .by(1.5,{scale : 1.5, opacity : -100})
+                .by(2,{scale : 2, opacity : -255})
+                .call(()=>{
+                    this.node.destroy();
+                    cc.log(this.node.opacity)
+                })
+                .start()
+    },
+
     onCollisionEnter(other, self) {
         if (other.node.group === 'Enemies' || other.node.group === 'Enemy Bullet') {
             if(--this.hp < 1){
-                cc.audioEngine.playEffect(this.soundEneDie, false);
-                this.node.destroy();
+              this.dieMovement();
             }
         }
     }

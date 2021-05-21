@@ -22,8 +22,8 @@ cc.Class({
 
     fire(){
         let bulletPos_1 = this.node.convertToWorldSpaceAR(new cc.Vec2(0, 0));
-        let bulletPos_2 = this.node.convertToWorldSpaceAR(new cc.Vec2(-50, -50));
-        let bulletPos_3 = this.node.convertToWorldSpaceAR(new cc.Vec2(50, -50));
+        let bulletPos_2 = this.node.convertToWorldSpaceAR(new cc.Vec2(-100, -100));
+        let bulletPos_3 = this.node.convertToWorldSpaceAR(new cc.Vec2(100, -100));
         
         this.add(bulletPos_1);
         this.add(bulletPos_2);

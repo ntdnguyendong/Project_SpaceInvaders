@@ -6,13 +6,14 @@ cc.Class({
             default : null,
             type : cc.AudioClip,
         },
-    },
-
-    ctor(){
-        this.hp = 10;
+        posX : {
+            default : 20,
+            serializable : true,
+        },
     },
 
     onLoad () {
+        this.movementEnemy()
     },
 
     start () {
@@ -33,8 +34,9 @@ cc.Class({
 
     movementEnemy(){
         let anim = cc.tween()
-                .to(.5,{position : cc.v2(this.node.position.x + 10,this.node.y)})
-                .to(.5,{position : cc.v2(this.node.position.x - 10,this.node.y)})
+                .by(.5,{position : cc.v2(this.posX,0)})
+                .by(1,{position : cc.v2(-this.posX*2,0)})
+                .by(.5,{position : cc.v2(this.posX,0)})
             cc.tween(this.node).then(anim).repeatForever().start();
     },
 });

@@ -2,7 +2,10 @@ cc.Class({
     extends: require('Bullet'),
 
     properties: {
-      
+        bulletScale : {
+            default : 0.01,
+            serializable : true,
+        }
     },
 
 
@@ -23,7 +26,7 @@ cc.Class({
 
     bulletMovement(dt){
         let curScale = this.node.scale;
-        curScale += .01;
+        curScale += this.bulletScale;
         this.node.setScale(curScale);
 
         let bulletPos = this.node.position;

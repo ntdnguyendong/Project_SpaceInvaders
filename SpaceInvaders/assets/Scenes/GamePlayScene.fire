@@ -162,7 +162,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 383.64925387650635
+      "z": 416.55821922031504
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -686,7 +686,7 @@
       }
     ],
     "_count": 0,
-    "interval": 1.5,
+    "interval": 2,
     "_id": "c4SzhG2xdNn5DMlCiLzGLt"
   },
   {
@@ -1221,9 +1221,7 @@
     "_fillStart": 0,
     "_fillRange": 0,
     "_isTrimmedMode": true,
-    "_atlas": {
-      "__uuid__": "8090805b-cade-4bef-8a18-932c90493fb7"
-    },
+    "_atlas": null,
     "_id": "9d1QGq++9KuL8qPfrbiAUe"
   },
   {
@@ -1280,6 +1278,9 @@
     "hp": 10,
     "bulletMain": {
       "__id__": 18
+    },
+    "spriteDie": {
+      "__uuid__": "971506e3-0578-4b13-b95b-3f5c87d4443c"
     },
     "_id": "f472Nc/GhBfrZZQSoqkIRV"
   },
