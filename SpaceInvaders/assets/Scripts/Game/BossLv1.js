@@ -1,3 +1,4 @@
+const Emitter = require("Emitter")
 cc.Class({
     extends: require('EnemyController'),
 

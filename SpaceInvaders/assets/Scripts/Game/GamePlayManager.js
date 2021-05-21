@@ -9,6 +9,7 @@ cc.Class({
     },
     gameLayout : cc.Node,
     loseLayout : cc.Node,
+    winLayout : cc.Node,
   },
 
   onLoad() {
@@ -35,7 +36,7 @@ cc.Class({
 
   isBossDie(){
     this.gameLayout.active = false;
-    this.loseLayout.active = true;
+    this.winLayout.active = true;
   }
 
 });

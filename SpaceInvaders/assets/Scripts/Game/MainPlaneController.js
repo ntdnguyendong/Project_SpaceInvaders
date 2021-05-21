@@ -22,7 +22,6 @@ cc.Class({
 
     update(dt) {
         this.planeMovement();
-        cc.log(this.hp);
     },
 
     getPositionMouse(event) {
@@ -51,14 +50,26 @@ cc.Class({
                 .by(2,{scale : 2, opacity : -255})
                 .call(()=>{
                     this.node.destroy();
-                    cc.log(this.node.opacity)
                 })
                 .start()
     },
 
+    progressbarCheck(){
+        this.progressBar.progress += this.progressBar.totalLength/10/100;
+      },
+
     onCollisionEnter(other, self) {
         if (other.node.group === 'Enemies' || other.node.group === 'Enemy Bullet') {
             if(--this.hp < 1){
+              this.dieMovement();
+            }
+        }
+    },
+
+    onCollisionStay(other, self) {
+        if (other.node.group === 'Enemies' || other.node.group === 'Enemy Bullet') {
+            this.hp -= 0.1;
+            if(this.hp < 1){
               this.dieMovement();
             }
         }

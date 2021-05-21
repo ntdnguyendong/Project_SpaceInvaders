@@ -34,16 +34,19 @@ cc.Class({
             }
         }
     },
-
+    
     movementEnemy(){
         let anim = cc.tween()
-                .by(.5,{position : cc.v2(this.posX,0)})
-                .by(1,{position : cc.v2(-this.posX*2,0)})
-                .by(.5,{position : cc.v2(this.posX,0)})
-            cc.tween(this.node).then(anim).repeatForever().start();
+        .by(.5,{position : cc.v2(this.posX,0)})
+        .by(1,{position : cc.v2(-this.posX*2,0)})
+        .by(.5,{position : cc.v2(this.posX,0)})
+        cc.tween(this.node).then(anim).repeatForever().start();
     },
-
+    
     dieMovement(){
+        
+        let polygonCon = this.node.getComponent(cc.PolygonCollider);
+        polygonCon.enabled = false;
         cc.audioEngine.playEffect(this.soundEneDie, false);
         this.node.getComponent(cc.Sprite).spriteFrame = this.spriteDie;
         cc.tween(this.node)
