@@ -7,9 +7,15 @@ cc.Class({
       default: null,
       type: cc.AudioClip,
     },
+    soundLose: {
+      default: null,
+      type: cc.AudioClip,
+    },
     gameLayout : cc.Node,
     loseLayout : cc.Node,
     winLayout : cc.Node,
+    
+    _isWin : true,
   },
 
   onLoad() {
@@ -21,8 +27,7 @@ cc.Class({
     
     let managerCollision = cc.director.getCollisionManager();
     managerCollision.enabled = true;
-    
-    cc.audioEngine.playEffect(this.soundGame, false);
+    if(this._isWin) cc.audioEngine.playEffect(this.soundGame, false);
   },
 
   returnHome(){
@@ -30,6 +35,9 @@ cc.Class({
   },
 
   isDie(){
+    this._isWin = false;
+    cc.log(this._isWin);
+    cc.audioEngine.playEffect(this.soundLose, false);
     this.gameLayout.active = false;
     this.loseLayout.active = true;
   },

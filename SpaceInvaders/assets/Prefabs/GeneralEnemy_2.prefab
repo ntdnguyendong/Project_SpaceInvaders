@@ -22,7 +22,7 @@
       }
     ],
     "_active": true,
-    "_level": 3,
+    "_level": 1,
     "_components": [
       {
         "__id__": 5
@@ -148,7 +148,7 @@
     },
     "_enabled": true,
     "bulletPrefab": {
-      "__uuid__": "04e70376-5303-427e-83eb-7b02d05a1673"
+      "__uuid__": "5ea38bcb-e73a-4ba7-a624-92092861ee4e"
     },
     "interval": 7,
     "_id": ""

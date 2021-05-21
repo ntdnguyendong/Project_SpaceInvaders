@@ -13,12 +13,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Bullet_1",
+    "_name": "Bullet_2",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 4,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
@@ -43,8 +43,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 59,
-      "height": 79
+      "width": 130,
+      "height": 70
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -53,8 +53,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 524,
+      "y": 292,
       "z": 0
     },
     "_scale": {
@@ -91,7 +91,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "88ee4656-c17e-433d-b279-81475252cb38"
+      "__uuid__": "ccc18807-a25d-4ffa-b20e-f8ec800ebbf8"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -124,33 +124,33 @@
     "points": [
       {
         "__type__": "cc.Vec2",
-        "x": -22,
-        "y": -0.4
+        "x": 28.76,
+        "y": -4.82
       },
       {
         "__type__": "cc.Vec2",
-        "x": 11.9,
-        "y": -6.4
+        "x": 33.42,
+        "y": -3.2
       },
       {
         "__type__": "cc.Vec2",
-        "x": 15.3,
-        "y": -4.1
+        "x": 36.73,
+        "y": -0.27
       },
       {
         "__type__": "cc.Vec2",
-        "x": 17.3,
-        "y": 0.4
+        "x": 33.79,
+        "y": 3.55
       },
       {
         "__type__": "cc.Vec2",
-        "x": 15.7,
-        "y": 3.9
+        "x": 28.99,
+        "y": 4.38
       },
       {
         "__type__": "cc.Vec2",
-        "x": 13.2,
-        "y": 6
+        "x": -47.73,
+        "y": -0.06
       }
     ],
     "_id": ""
@@ -180,9 +180,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "77320cfe-ecb0-49a1-9fe7-77b863df6d5b"
+      "__uuid__": "5ea38bcb-e73a-4ba7-a624-92092861ee4e"
     },
-    "fileId": "05GL6dHz5Pg4mCmOXJI7MY",
+    "fileId": "27qQ4RndJHJKGjBgzz7Kd4",
     "sync": false
   }
 ]

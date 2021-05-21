@@ -6,6 +6,10 @@ cc.Class({
     properties: {
         losePanel : cc.Node,
         btnHome : cc.Node,
+        soundGame: {
+            default: null,
+            type: cc.AudioClip,
+          },
     },
 
     onLoad () {

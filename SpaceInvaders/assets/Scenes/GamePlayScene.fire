@@ -4144,6 +4144,9 @@
     "btnHome": {
       "__id__": 46
     },
+    "soundGame": {
+      "__uuid__": "c8f8a390-0465-43c0-afbc-fd62cf5ff4ef"
+    },
     "_id": "62HUiONIVC0roBy5iOQAek"
   },
   {
@@ -4847,6 +4850,9 @@
     "soundGame": {
       "__uuid__": "8579269b-3344-4e31-830f-dc6b3dd4ea73"
     },
+    "soundLose": {
+      "__uuid__": "c8f8a390-0465-43c0-afbc-fd62cf5ff4ef"
+    },
     "gameLayout": {
       "__id__": 11
     },
@@ -4856,6 +4862,7 @@
     "winLayout": {
       "__id__": 53
     },
+    "_isWin": true,
     "_id": "ac5VK18iBFxbNuadbXJo9U"
   }
 ]
